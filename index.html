@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="script.js"></script>
+        <div id="body">
+            <div class="row">
+                <input type="text" id="output" readonly>
+            </div>
+            <div class="row">
+                <button id="AC" onclick="document.getElementById('output').value='0'; empty=true;">AC</button>
+                <button id="plusminus" onclick="invert();">+/-</button>
+                <button id="division" onclick="input_char('/');">÷</button>
+                <button id="percent" onclick="input_char('/100');">%</button>
+            </div>
+            <div class="row">
+                <button id="seven" onclick="input_char('7');">7</button>
+                <button id="eight" onclick="input_char('8');">8</button>
+                <button id="nine" onclick="input_char('9');">9</button>
+                <button id="times" onclick="input_char('*');">×</button>
+            </div>
+            <div class="row">
+                <button id="four" onclick="input_char('4');">4</button>
+                <button id="five" onclick="input_char('5');">5</button>
+                <button id="six" onclick="input_char('6');">6</button>
+                <button id="minus" onclick="input_char('-');">-</button>
+            </div>
+            <div class="row">
+                <button id="one" onclick="input_char('1');">1</button>
+                <button id="two" onclick="input_char('2');">2</button>
+                <button id="three" onclick="input_char('3');">3</button>
+                <button id="plus" onclick="input_char('+');">+</button>
+            </div>
+            <div class="row">
+                <button id="zero" onclick="input_char('0');">0</button>
+                <button id="point" onclick="input_char('.');">.</button>
+                <button id="equals" onclick="calculate();">=</button>
+            </div>
+        </div>
+    </body>
+</html>
